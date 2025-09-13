@@ -1,0 +1,13 @@
+paddleocr
+paddlepaddle
+numpy
+opencv-python
+wheel
+setuptools
+PyMuPDF
+gradio
+torch 
+torchvision 
+torchaudio
+realesrgan
+Pillow

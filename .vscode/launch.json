@@ -1,0 +1,83 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: App.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/App.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "justMyCode": false,
+            "stopOnEntry": false
+        },
+        {
+            "name": "Python: App.py with Image",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/App.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": ["${input:imagePath}"],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "justMyCode": false,
+            "stopOnEntry": false
+        },
+        {
+            "name": "Python: Debug App.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/App.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "justMyCode": false,
+            "stopOnEntry": true
+        },
+        {
+            "name": "Gradio: PDF Image Extractor",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/pdf_image_extractor_gradio.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "justMyCode": false,
+            "stopOnEntry": false
+        },
+        {
+            "name": "Gradio: Debug PDF Image Extractor",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/pdf_image_extractor_gradio.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "justMyCode": false,
+            "stopOnEntry": true
+        }
+    ],
+    "inputs": [
+        {
+            "id": "imagePath",
+            "description": "Enter the path to the image file",
+            "default": "allen.png",
+            "type": "promptString"
+        }
+    ]
+}
