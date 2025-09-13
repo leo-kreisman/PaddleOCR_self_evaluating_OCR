@@ -1,0 +1,19 @@
+# Ignore Python cache files
+__pycache__/
+
+# Ignore virtual environment directory
+venv/
+
+# Ignore output directory
+output/
+
+# Ignore image files
+*.png
+*.jpeg
+*.jpg
+
+# Ignore specific Python script
+adaptive_paddleocr.py
+
+# Ignore dataset examples directory
+ocr_det_dataset_examples/
